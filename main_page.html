@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VOIDHEAD</title>
+    <link rel="icon" href="orca.gif" type="image/gif">
+    <link rel="stylesheet" href="common.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bruno+Ace+SC&family=DotGothic16&family=Knewave&family=Rock+Salt&family=Special+Elite&display=swap" rel="stylesheet">
+<body>
+     <div id="crt-screen">
+    <!-- 顶部栏 -->
+    <header class="metal-header">
+        <div id="icon"><img src="green-box.png"></div>
+            <div id="websiteName" class="header-item">Voidhead</div>
+            <span class="cursor-like"> ▂</span>
+            <div id="time" class="header-item">time</div>
+    </header>
+
+    <!-- floating window: music player? -->
+    <!-- <div id="musicWindow" class="float-window" style="display: block;">
+        <div class="float-window-move">
+            <span>Drag it! ... or just press the music icon to close</span>
+        </div>
+        <div class="float-window-content float-window-move">
+            <iframe src="./webdeck-player/index.html" height="250px" width="600px"></iframe>
+        </div>
+    </div> -->
+    <!-- floating window: comment -->
+    <div id="commentWindow" class="float-window" style="display: block;">
+        <div class="float-window-move">
+            <span>Drag it!</span>
+        </div>
+        <div class="float-window-content float-window-move">
+            <div id="c_widget"></div>
+            <script src="./comment-widget-dark/comment-widget.js"></script>
+        </div>
+    </div>
+
+    <div class="window-container">
+    <!--侧边栏 -->
+    <div id="sideBar" class="window">
+        <div class="custom-title window-title">
+            <div class="orb red"></div>
+            <div class="orb yellow"></div>
+            <div class="orb green" style="background: #74c680"></div>
+            <span>Circular existence</span>
+        </div>
+        <div class="sidebarContent active" id="homeSide">
+                <img src="./img/warning-divider.gif" alt="star-divider">
+                <img src="./img/Fishes-swimming.gif" alt="fishes">
+                <div class="buttons" style="margin: 10px;">
+                    <img src="./img/buttons/3void.png" alt="void">
+                </div>
+                <img src="./img/star-divider.gif" alt="star-divider">
+                <p>to-do</p>
+                <ul>
+                    <li>figure out blogging</li>
+                    <li>fill in the pages</li>
+                    <li>look for more widges</li>
+                    <li>finish the fake galgame</li>
+                    <li>...</li>
+                </ul>
+                <p>to-do but harder</p>
+                <ul>
+                    <li>make irregular windows and players</li>
+                </ul>
+                <img src="./img/sky-divider.jpg" alt="sky-divider">
+        </div>
+        <div class="sidebarContent" id="aboutSide">
+            <img src="./img/rainbow-divider.gif" alt="rainbow-divider">
+            <div class="stamps">
+                <!-- rainbow -->
+                    <img src="./img/stamps/nyan.gif" alt="nyan">
+                    <img src="./img/stamps/zomg.gif" alt="zomg"> 
+                    <img src="./img/stamps/rainbow-gif.gif" alt="rainbow">
+                    <!-- blue -->
+                    <img src="./img/stamps/draw.png" alt="draw">
+                    <img src="./img/stamps/smiley.gif" alt="smiley">
+                     <img src="./img/stamps/bluescreen.gif" alt="void">
+                    <img src="./img/stamps/iloveoldweb.png" alt="oldweb">
+                    <img src="./img/stamps/believe.png" alt="iwantobelieve">
+                    <img src="./img/stamps/water.png" alt="water">
+                    <img src="./img/stamps/goldfish.gif" alt="goldfish">
+                    
+                    <img src="./img/stamps/rainbow.png" alt="rainbow">
+                    <img src="./img/stamps/biohazard.png" alt="hazard">          
+                    <img src="./img/stamps/task.gif" alt="task">
+                    <img src="./img/stamps/stupid.png" alt="stupid">
+                <!-- yellow -->
+                    <img src="./img/stamps/catlady.gif" alt="catlady">
+                    <img src="./img/stamps/h24.gif" alt="h24">
+                    <img src="./img/stamps/doglover.gif" alt="dog">
+                    <img src="./img/stamps/caution.gif" alt="caution">
+                    <img src="./img/stamps/alien.png" alt="alien">
+                <!-- pink -->
+                    <img src="./img/stamps/nuko.png" alt="nuko">
+                    <img src="./img/stamps/gumi2.gif" alt="gumi">
+                    <img src="./img/stamps/gumi1.gif" alt="gumi">
+                    <img src="./img/stamps/dizzy.gif" alt="dizzy">
+                    
+                    <img src="./img/stamps/owo.png" alt="owo">
+                <!-- purple -->
+                    <img src="./img/stamps/pee.gif" alt="pee">
+                    <img src="./img/stamps/study.gif" alt="study">
+                    <img src="./img/stamps/jsr.png" alt="jetsetradio">
+
+                <!-- black grey white -->
+                    <img src="./img/stamps/glow.png" alt="glow">
+                    <img src="./img/stamps/ilovemusic.gif" alt="music">
+                    <img src="./img/stamps/kmfdm.png" alt="kmfdm">
+                    <img src="./img/stamps/evilcat.png" alt="evilcat">
+                    <img src="./img/stamps/internetiscool.png" alt="void">
+                    <img src="./img/stamps/pc.gif" alt="pc">
+                    <img src="./img/stamps/jellies2.gif" alt="jellies">
+                    <img src="./img/stamps/dvd.gif" alt="dvd">
+                    <img src="./img/stamps/idiot.gif" alt="idiot">
+                    <img src="./img/stamps/ha.gif" alt="haha">
+                    <img src="./img/stamps/nosignal.gif" alt="nosignal">
+                    <img src="./img/stamps/noise.gif" alt="noise">
+                    <img src="./img/stamps/troll.gif" alt="troll">
+                    <img src="./img/stamps/cooleronline.gif" alt="cooleronline">
+                    <img src="./img/stamps/ahhh.gif" alt="ahh">
+                    <img src="./img/stamps/loading.gif" alt="loading">
+                    <img src="./img/stamps/citation.png" alt="?">
+                    <img src="./img/stamps/gender.png" alt="gender">
+            </div>
+        </div>
+        <div class="window-footer">
+            <div>· ● ·</div>
+        </div>
+    </div>
+
+    <!-- 主窗口 -->
+    <div id="mainWindow" class="window">
+        <div class="custom-title window-title">
+            <div class="orb red"></div>
+            <div class="orb yellow"></div>
+            <div class="orb green" style="background: #74c680"></div>
+            <span>Such a void</span>
+        </div>
+
+        <div id="homeContent" class="window-content active">
+            <p>这里是网站内容...</p>
+            <a href="#">test</a>
+        </div>
+        
+        <div id="aboutContent" class="window-content">
+            <div class="centered">
+                <div id="aboutMe">
+                    <div class="about-card">
+                        <div class="about-col pic">
+                            <img src="./img/myicon.gif" alt="voidhead" style="width: 200px;">
+                        </div>
+                        <div class="about-col info">
+                            <p>1962, Englishman</p>
+                            <p>Resident in Shanghai</p>
+                            <p>☭ MLM communist, L/acc</p>
+                            <img src="./img/buttons/Agender.png" alt="agender">
+                            <p style="font-size: 36px;">Absolute <br>Mordernity</p>
+                        </div>
+                        <div class="about-col extra">
+                            <a id="kinky-link" href="#">悪俗頁面（NSFW）</a>
+                            <img src="./img/buttons/FETE.gif" alt="fete">
+                            <img src="./img/buttons/communism.gif" alt="communism">
+                            <img src="./img/buttons/webshare.gif" alt="webshare">
+                        </div>
+                    </div>
+                </div>
+                <p  style="margin-top: 30px; 
+                margin-bottom: 0;
+                text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7), 
+                 0 0 25px #011df2, 
+                 0 0 5px #011df2;">d(d＇∀＇)  Scroll for moewr  ･*･:≡(　ε:)</p>
+                <img src="./img/cat-divider.png" alt="cat-divider" style="margin:0; padding:0;">
+                <div class="more-about">
+                    <p>Glad you want to know me more... 
+                        You can call me whatever you want,
+                        but most of my frens call me 铥铥/Thule. 
+                        If you have trouble pronouncing it,
+                        you can call me Mars, too. 
+                        Mars is a name derived from my twitter name MarkovChan, 
+                        which is a pun.
+                        Also, 虹口発電所/HONKO POWERPLANT is a name for my Doujinshi Circle. 
+                        I'm a fan of Splatoon's official manga,
+                        and I'm a hater of the game, too. 
+                        You can check the pink link for my NSFW shipping page.
+                        <br>
+                        <img src="./img/smile.webp" alt="smile" style="width: 100px; height: auto;">
+                        I love love sci-fis, one of my fav is GitS: Stand Alone Complex & 2nd Gig. 
+                        GitS has deeply influenced my lifepath and thoughts on politics.
+                        For which, as stated before, I'm a MLM communist. 
+                        I'd like to hang out with other lefties, 
+                        although I might be a bit too extreme for some of them, 
+                        or I'm just too anxious to talk.
+                        <img src="./img/sputnik.gif">
+                        <br>
+                        <img src="./img/kmfdm.gif" alt="kmfdm" style="width: 100px; height: auto;">
+                        Also, my favourite band is KMFDM, I love industrial stuff... 
+                        I also listen to laibach and godflesh.
+                        Though mostly I listen to acg music.
+                        <br>
+                        I apologize for the tedious introduction, 
+                        but I guess noone would read this far.
+                        Anyway, if you share same interests,
+                        I do hope we can be friends. 
+                        Sorry for my English, it's not perfect, 
+                        but it works it works.
+                        <br>
+                        <span style="align-self: right; font-family: 'Rock Salt';">
+                            Yours,
+                        <br>
+                        Thule
+                        </span>
+                        <br>
+                        <span style="text-decoration: line-through;">
+                        Why there has to be so many "I"... It's so embarrassing.
+                        </span>
+                    </p>
+                    <p style="font-family: 'Special Elite'; line-height: 1.5;">
+                        Nevertheless, the pomp and the splendor with which commodity-producing society surrounds 
+                        itself, as well as its illusory sense of security, are not immune to danger. 
+                        ... humanity will be prey to a mythic anguish 
+                        so long as phantasmagoria occupies a place in it.
+                        <br>
+                        ———— Paris, Capital of the Nineteenth Century, Expose of 1939, Walter Benjamin
+                        <img src="./img/let_the_future.gif" alt="future" style="align-items: center;">
+                        <br>
+                        One must be absolutely modern.<br>
+                        Never mind hymns of thanksgiving: 
+                        hold on to a step once taken. A hard night! 
+                        Dried blood smokes on my face, and nothing lies behind me but that repulsive little tree!… 
+                        The battle for the soul is as brutal as the battles of men; but the sight of justice is the pleasure of God alone.
+                        <br>
+                        ———— A Season in Hell, Arthur Rimbaud
+                        <br>
+                        <img src="./img/nick-land-space-echoes.gif" alt="echos" style="height: 300px; width:auto;">
+                        <img src="./img/chip-divider.gif" style="width:300px; height: auto;" alt="chip-divider">
+                    </p>
+                    <div class="evenboxinner">NOTES!</div>
+                </div>
+                <div class="blinkies">
+                    <!--rainbow-->
+                    <img src="./img/blinkies/glitch2.gif" alt="glitch">
+                    <img src="./img/blinkies/bgdc.gif" style="height: 20px; width: 150px;" alt="bgdc">
+
+                    <!--blue-->
+                    
+                    <img src="./img/blinkies/manytabs.gif">
+                    <img src="./img/blinkies/finfin.gif">
+                    <img src="./img/blinkies/neversleep.gif">
+                    <!--pink-->
+                    <img src="./img/blinkies/pinkalien.gif">
+                    <!-- black-->
+                     <img src="./img/blinkies/posadas.gif">
+                     <img src="./img/blinkies/01.webp">
+                     <img src="./img/blinkies/0068-mainframe.gif">
+                     <img src="./img/blinkies/cybercriminal.webp">    
+                </div>
+            </div>
+        </div>
+
+        <div id="blogContent" class="window-content">
+            <h1>Blog</h1>
+            <p>This is wip blog content.</p>
+        </div>
+
+        <div class="window-footer">
+            <div>· ● ·</div>
+        </div>
+    </div>
+
+    
+</div>
+
+    <!-- 应用栏 -->
+    <div class="app-bar">
+        
+            <div class="app-icon" title="Main page" style="background-image: url('./img/main.png')" data-target="home"></div>
+            <div class="app-icon" title="About" style="background-image:url('./img/ppl.png')" data-target="about"></div>
+            <div class="app-icon" title="Blog" style="background-image:url('./img/blog.png')" data-target="blog"></div>
+            <div class="app-icon" title="Music" style="background-image:url('./img/music.png')" data-target="musicWindow"></div>
+            <div class="app-icon" title="Leave your words..." style="background-image:url('./img/saturn.png')" data-target="commentWindow"></div>
+    </div>
+
+    <!-- galgame -->
+    <div id="avatar" class="avatar">
+        <img src="avatar.png" alt="avatars">
+    </div>
+
+    <script src="script.js"></script>
+    <script src="./comment-widget-dark/comment-widget.js"></script>
+</div>
+</body>
+</html>

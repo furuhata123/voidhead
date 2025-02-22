@@ -1,0 +1,30 @@
+﻿[Arrow]
+Path=Dolphin Normal Select.ani
+
+[Help]
+Path=Dolphin Help Select.ani
+
+[Wait]
+Path=Dolphin Busy.ani
+
+[AppStarting]
+Path=Dolphin WIB Normal.ani
+
+[IBeam]
+Path=Dolphin Text Select.ani
+
+[SizeNS]
+Path=Dolphin Vertical Resize.ani
+
+[SizeWE]
+Path=Dolphin Horizontal Resize.ani
+
+[SizeNWSE]
+Path=Dolphin Diagonal Resize 1.ani
+
+[SizeNESW]
+Path=Dolphin Diagonal Resize 2.ani
+
+[Hand]
+Path=Dolphin Link Select Teal.ani
+

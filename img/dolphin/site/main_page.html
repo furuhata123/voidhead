@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VOIDHEAD</title>
+    <link rel="stylesheet" href="common.css">
+    <link href="https://fonts.googleapis.com/css2?family=Bruno+Ace+SC&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- 顶部栏 -->
+    <header class="metal-header">
+        <div id="icon"><img src="green-box.png"></div>
+            <div id="websiteName" class="header-item">Voidhead</div>
+            <span class="cursor-like"> ▂</span>
+            <div id="time" class="header-item">time</div>
+    </header>
+
+    <!-- floating window: music player? -->
+    <div id="musicWindow" class="float-window" style="display: block;">
+        <div class="float-window-move">
+            <span>♪ Music</span>
+        </div>
+        <div class="float-window-content float-window-move">
+            <iframe src="./webdeck-player/index.html" height="250px" width="600px"></iframe>
+        </div>
+    </div>
+    <!-- floating window: comment -->
+    <div id="commentWindow" class="float-window" style="display: block;">
+        <div class="float-window-move">
+            <span>❤ Sign the guest book</span>
+        </div>
+        <div class="float-window-content float-window-move">
+            <script src="comment-widget.js"></script>
+        </div>
+    </div>
+
+    <div class="window-container">
+    <!--侧边栏 -->
+    <div id="sideBar" class="window">
+        <div class="custom-title window-title">
+            <div class="orb red"></div>
+            <div class="orb yellow"></div>
+            <div class="orb green" style="background: #74c680"></div>
+            <span>Hi</span>
+        </div>
+        <div class="sidebarContent active" id="homeSide">
+                <p>这里是sidebar内容...</p>
+                <a href="#">test</a>
+        </div>
+        <div class="sidebarContent" id="aboutSide">
+                <p>这里是sidebar about内容...</p>
+                <a href="#">test</a>
+        </div>
+    </div>
+
+    <!-- 主窗口 -->
+    <div id="mainWindow" class="window">
+        <div class="custom-title window-title">
+            <div class="orb red"></div>
+            <div class="orb yellow"></div>
+            <div class="orb green" style="background: #74c680"></div>
+            <span>Hi</span>
+        </div>
+
+        <div id="homeContent" class="window-content active">
+            <p>这里是网站内容...</p>
+            <a href="#">test</a>
+        </div>
+        
+        <div id="aboutContent" class="window-content">
+            <h1>About</h1>
+            <p>This is the about content.</p>
+        </div>
+
+        <div id="blogContent" class="window-content">
+            <h1>Blog</h1>
+            <p>This is wip blog content.</p>
+        </div>
+    </div>
+
+</div>
+
+    <!-- 应用栏 -->
+    <div class="app-bar">
+        
+            <div class="app-icon" title="Main page" style="background-image: url('./img/main.png')" data-target="home"></div>
+            <div class="app-icon" title="About" style="background-image:url('./img/ppl.png')" data-target="about"></div>
+            <div class="app-icon" title="Blog" style="background-image:url('./img/blog.png')" data-target="blog"></div>
+            <div class="app-icon" title="Music" style="background-image:url('./img/music.png')" data-target="musicWindow"></div>
+            <div class="app-icon" title="Leave your words..." style="background-image:url('./img/saturn.png')" data-target="commentWindow"></div>
+    </div>
+
+    <!-- 虚拟形象 -->
+    <div id="avatar" class="avatar">
+        <img src="avatar.png" alt="avatars">
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
